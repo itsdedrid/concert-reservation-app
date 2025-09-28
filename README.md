@@ -24,16 +24,6 @@ Frontend:
 cd web
 npm install
 ```
-
-2. Database setup
-The app uses Prisma with SQLite by default.
-Run migrations:
-
-```bash
-cd api
-npx prisma migrate dev --name init
-```
-
 3. Environment variables
 Backend (api/.env):
 
@@ -46,6 +36,15 @@ Frontend (web/.env.local):
 
 ```bash
 NEXT_PUBLIC_API_URL=http://localhost:3001
+```
+
+3. Database setup
+The app uses Prisma with SQLite by default.
+Run migrations:
+
+```bash
+cd api
+npx prisma migrate dev --name init
 ```
 
 4. Run servers
